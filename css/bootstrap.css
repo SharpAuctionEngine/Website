@@ -344,6 +344,7 @@ a:focus {
 
 img {
 	vertical-align: middle;
+	text-align: center;
 }
 
 .img-responsive {
@@ -6379,7 +6380,7 @@ button.close {
 }
 
 .carousel-inner > .active {
-  left: 0;
+	left: 0;
 }
 
 .carousel-inner > .next,
@@ -6415,7 +6416,7 @@ button.close {
   top: 0;
   bottom: 0;
   left: 0;
-  /*width: 15%;*/
+  width: 15%;
   font-size: 20px;
   color: #ffffff;
   text-align: center;
