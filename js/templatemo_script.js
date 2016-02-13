@@ -61,6 +61,8 @@ jQuery(function($) {
 
                                     }
         });
+
+
     });
 });
 
@@ -112,3 +114,12 @@ $("#Carousel").carousel({
     pause: true,
     interval: 10000,
   });
+
+//resize event for timeline
+  $( window ).resize(function() {
+            if(window.innerWidth > 600){
+            $('.events-content').css('height',246+'px');
+            $('.events').css('transform','translateX(-'+480+'px)');
+
+            }
+        });
