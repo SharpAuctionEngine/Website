@@ -1318,6 +1318,7 @@ dd{margin-left:0}
 	overflow-x: hidden;
 	margin-bottom: 0;
 	height: 400px;
+  
 }
 
 
@@ -1343,8 +1344,11 @@ dd{margin-left:0}
   .bio_hide {
     display:none;
     }
+}
+
 
 @media (min-width: 768px){
 .custom_width .col-sm-2 { width: 19.285714285714%; }
+
 }
 
