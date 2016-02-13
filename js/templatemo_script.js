@@ -24,7 +24,18 @@ jQuery(function($) {
             scrollTo('#templatemo-top');
         });
 
-        
+        // scroll to specific id when click on menu
+        $('.top-menu .navbar-nav a').click(function(e){
+            e.preventDefault(); 
+            var linkId = $(this).attr('href');
+            scrollTo(linkId);
+            if($('.navbar-toggle').is(":visible") === true){
+                $('.navbar-collapse').collapse('toggle');
+            }
+            $(this).blur();
+            return false;
+        });
+
         // to stick navbar on top
         $('.top-menu ').stickUp();
 
@@ -54,12 +65,25 @@ jQuery(function($) {
 });
 
 function initialize() {
-    var mapOptions = {
-      zoom: 12,
-      center: new google.maps.LatLng(34.7227653,-86.5803958)
-    };
 
-    var map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
+
+
+        var _801_franklin=new google.maps.LatLng(34.722744, -86.578332);
+
+        var mapOptions = {
+          center:_801_franklin,
+          zoom:14,
+          mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+
+        var map=new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
+
+        var marker=new google.maps.Marker({
+          position:_801_franklin,
+          });
+
+        marker.setMap(map);
+
 }
 
 // scroll animation 
@@ -72,20 +96,10 @@ function scrollTo(selectors)
 
 }
 
-// $("#Carousel").carousel();
+$("#Carousel").carousel();
 
 //Set the carousel options
   $('#quote-carousel').carousel({
     pause: true,
-    interval: 10000,
-  });
-  
- //Set the carousel options
-  $('#timeline-carousel').carousel({
-    pause: true,
-    interval: 10000,
-  });
-  $('#Carousel').carousel({
-    pause: true,
-    interval: 1500,
+    interval: 3000,
   });
