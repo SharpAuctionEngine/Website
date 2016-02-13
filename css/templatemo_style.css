@@ -24,12 +24,23 @@ h1, h2, h3, h4, h5, h6, span, p {
 	font-weight: 600;
 }
 
-* {
+/** {
   -webkit-border-radius: 0 !important;
      -moz-border-radius: 0 !important;
-          border-radius: 0 !important;
+          /*border-radius: 0 !important;*/
+}*/
+input.icon {
+    padding: 5px;
 }
-
+input.icon::-webkit-input-placeholder {
+    font-family: 'FontAwesome';
+}
+input.icon::-moz-placeholder {
+    font-family: 'FontAwesome';
+}
+input.icon::-ms-input-placeholder {
+    font-family: 'FontAwesome';
+}
 
 .templatemo_clear {
 	clear: both;
@@ -708,10 +719,10 @@ h1, h2, h3, h4, h5, h6, span, p {
 }
 
 .footer_container {
-	margin-top: 60px;
-	margin-bottom: 20px;
+	/*margin-top: 60px;
+	margin-bottom: 20px;*/
 	color: #FFFFFF;
-	font-weight: 300;
+	/*font-weight: 300;*/
 }
 
 .footer_bottom_content {
@@ -720,7 +731,25 @@ h1, h2, h3, h4, h5, h6, span, p {
 	font-size: 14px;
 	color: #FFFFFF;
 }
-
+.btn-grey
+{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+a:hover.btn.btn-grey
+{
+    background-color: #FF6600;
+    color: #FFFFFF;
+}
+a:hover.link_hover
+{
+    background-color: #FF6600;
+    color: #FFFFFF;
+}
+.footer_white
+{
+    color:#FFFFFF;
+}
 .social-icon-fb {
     background: url('../images/social-icon-fb.png') no-repeat;
     width: 42px;
@@ -1308,3 +1337,14 @@ dd{margin-left:0}
 	text-align: left;
 	height: 180px;
 }
+
+/* Karthick added below CSS*/
+@media (max-width:768px){
+  .bio_hide {
+    display:none;
+    }
+
+@media (min-width: 768px){
+.custom_width .col-sm-2 { width: 19.285714285714%; }
+}
+
