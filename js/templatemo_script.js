@@ -96,10 +96,19 @@ function scrollTo(selectors)
 
 }
 
-$("#Carousel").carousel();
+$("#Carousel").carousel({
+    pause: true,
+    interval: 1500,
+  });
 
 //Set the carousel options
   $('#quote-carousel').carousel({
     pause: true,
-    interval: 3000,
+    interval: 10000,
+  });
+  
+ //Set the carousel options
+  $('#timeline-carousel').carousel({
+    pause: true,
+    interval: 10000,
   });
