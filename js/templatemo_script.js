@@ -37,7 +37,7 @@ jQuery(function($) {
         });
 
         // to stick navbar on top
-        $('.top-menu ').stickUp();
+       // $('.top-menu ').stickUp();
 
 
         // gallery category

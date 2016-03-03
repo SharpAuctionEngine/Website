@@ -130,6 +130,9 @@
   -moz-transition: background-color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, border-color 0.3s;
 }
+ .test {
+	margin-top: 17px;
+	}
 .no-touch .cd-horizontal-timeline .events a:hover::after {
   background-color: #7b9d6f;
   border-color: #7b9d6f;

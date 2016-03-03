@@ -1,7 +1,10 @@
 jQuery(document).ready(function($){
 	var timelines = $('.cd-horizontal-timeline'),
 		eventsMinDistance = 50;
+		if(window.innerWidth <= 320){
+		eventsMinDistance = 36;
 
+		}
 	(timelines.length > 0) && initTimeline(timelines);
 
 	function initTimeline(timelines) {
@@ -166,7 +169,7 @@ jQuery(document).ready(function($){
 			visibleContent.removeClass('leave-right leave-left');
 			selectedContent.removeClass('enter-left enter-right');
 		});
-		eventsContent.css('height', selectedContentHeight+'px');
+		// eventsContent.css('height', selectedContentHeight+'px');
 	}
 
 	function updateOlderEvents(event) {

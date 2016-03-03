@@ -287,7 +287,8 @@ input.icon::-ms-input-placeholder {
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a:focus
+{
 	background-color: #787878;
 	color: #fff;
 }
@@ -745,10 +746,14 @@ a:hover.link_hover
 {
     background-color: #FF6600;
     color: #FFFFFF;
+	text-decoration:none;
 }
 .footer_white
 {
     color:#FFFFFF;
+	font-size:15px;
+	font-weight:300;
+	font-family:'Roboto',sans-serif;
 }
 .social-icon-fb {
     background: url('../images/social-icon-fb.png') no-repeat;
@@ -756,7 +761,9 @@ a:hover.link_hover
     height: 42px;
     display: block;
 }
-
+@media (min-width: 768px){
+/*.custom_width .col-sm-2 { width: 19.285714285714%; }
+*/}
 a:hover .social-icon-fb {
     background: url('../images/social-icon-fb-over.png') no-repeat;
 }
@@ -1344,11 +1351,18 @@ dd{margin-left:0}
   .bio_hide {
     display:none;
     }
+ }
+@media (max-width:414px){
+    
+ .Mobile_iconRemove
+  { 
+    display:none;
+  }
 }
 
 
 @media (min-width: 768px){
 .custom_width .col-sm-2 { width: 19.285714285714%; }
-
+ 
 }
 
