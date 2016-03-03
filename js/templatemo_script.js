@@ -100,7 +100,7 @@ function scrollTo(selectors)
 
 $("#Carousel").carousel({
     pause: true,
-    interval: 1500,
+    interval: 2000,
   });
 
 //Set the carousel options
