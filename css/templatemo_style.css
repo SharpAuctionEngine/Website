@@ -748,12 +748,18 @@ a:hover.link_hover
     color: #FFFFFF;
 	text-decoration:none;
 }
+.footer_header
+{
+ color:#FFFFFF;
+  font-size:14px;
+  
+}
 .footer_white
 {
     color:#FFFFFF;
-	font-size:15px;
+	font-size:16px;
 	font-weight:300;
-	font-family:'Roboto',sans-serif;
+	/*font-family:'Roboto',sans-serif;*/
 }
 .social-icon-fb {
     background: url('../images/social-icon-fb.png') no-repeat;
