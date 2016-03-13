@@ -5,7 +5,7 @@ jQuery(function($)
         $.ajax(
         {
             type: "POST",
-            url: "contact-us/submit",
+            url: "/contact-us/submit",
             data: $data.serialize(),
          success: function()
          {
@@ -21,7 +21,7 @@ jQuery(function($)
          	bootbox.alert('There was an error in sending message. Please try again!');
 
          },  
-        })
+        });
 
 
 });
