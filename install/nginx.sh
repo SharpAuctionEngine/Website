@@ -45,9 +45,10 @@ fi
 
 touch $SITE_AVAILABLE
 
-sudo ln -s $SITE_AVAILABLE $SITE_ENABLED
+echo "sudo ln -s $SITE_AVAILABLE $SITE_ENABLED"
 
-cat >$SITE_AVAILABLE <<EOF
+echo "nano $SITE_AVAILABLE"
+cat <<EOF
 
 # this file is already saved
 # exit and we'll see if nginx passes a config test
@@ -124,14 +125,6 @@ server {
         # proxy_pass http://${DOMAIN}:9180;
     }
 
-    # location / {
-    #     proxy_set_header Upgrade \$http_upgrade;
-    #     proxy_set_header Connection "upgrade";
-    #     proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
-    #     proxy_set_header Host \$host;
-    #     proxy_http_version 1.1;
-    #     proxy_pass http://${DOMAIN}:8080;
-    # }
 }
 EOF
 
