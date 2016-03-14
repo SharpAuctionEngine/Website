@@ -70,7 +70,8 @@ upstream ${D_SLUG}nodecontactus {
 server {
     listen 80 ;
     server_name ${DOMAIN} www.${DOMAIN};
-    index index.html index.html index.php;
+    index index.html index.htm;
+    root $PROJECT_DIR/public;
     charset utf-8;
 
     ## Block download agents
@@ -91,7 +92,7 @@ server {
     }
 
     location / {
-        root $PROJECT_DIR/main_static;
+        # root $PROJECT_DIR/public;
         try_files \$uri \$uri/ index.html;
     }
 
