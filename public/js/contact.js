@@ -3,11 +3,22 @@ function isValidEmailAddress(emailAddress) {
     return pattern.test(emailAddress);
 };
 
+function resetContactUsForm ()
+{
+    $("#name").val(''); // reset field after successful submission
+    $("#email").val(''); // reset field after successful submission
+    $("#msg").val(''); // reset field after successful submission
+    $("#phoneNumber").val('');
+    $("#subject").val('');
+}
+
 $(function($) {
     $('body').on('submit','#contact_form',function() {
         var $form = $('#contact-form');
         var email = $("#email").val();
+
         console.log({
+            '$form':$form,
             '$form.serialize()':$form.serialize(),
         });
 
@@ -18,11 +29,7 @@ $(function($) {
                 data: $form.serialize(),
                 success: function() {
                     bootbox.alert('Your message has been sent.Thank you!');
-                    $("#name").val(''); // reset field after successful submission
-                    $("#email").val(''); // reset field after successful submission
-                    $("#msg").val(''); // reset field after successful submission
-                    $("#phoneNumber").val('');
-                    $("#subject").val('');
+                    // resetContactUsForm();
                 },
                 error: function() {
 
