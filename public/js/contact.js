@@ -14,7 +14,7 @@ function resetContactUsForm ()
 
 $(function($) {
     $('body').on('submit','#contact_form',function() {
-        var $form = $('#contact-form');
+        var $form = $('#contact_form');
         var email = $("#email").val();
 
         console.log({
@@ -29,7 +29,7 @@ $(function($) {
                 data: $form.serialize(),
                 success: function() {
                     bootbox.alert('Your message has been sent.Thank you!');
-                    // resetContactUsForm();
+                    resetContactUsForm();
                 },
                 error: function() {
 
