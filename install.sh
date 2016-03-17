@@ -8,6 +8,6 @@ export PROJECT_DIR="$(pwd)"
 
 set -x #echo on
 
-# install/node_asu.sh
-# install/node_contactus.sh
+install/node_asu.sh
+install/node_contactus.sh
 install/nginx.sh

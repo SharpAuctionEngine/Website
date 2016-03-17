@@ -96,12 +96,14 @@ server {
         try_files \$uri \$uri/ index.html;
     }
 
-    location ~ ^/auctioneer-signup {
+    # TODO verify this is best # https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms
+    # e.g. does "match best non-regex" subvert the malicious bot code upstairs?
+    location ^~ /auctioneer-signup {
         root $PROJECT_DIR/node_asu/public;
         try_files \$uri \$uri/ index.html;
     }
 
-    location /auctioneer-signup/submit {
+    location ^~ /auctioneer-signup/submit {
         proxy_set_header Upgrade \$http_upgrade;
         proxy_set_header Connection "upgrade";
         proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
@@ -111,12 +113,12 @@ server {
         # proxy_pass http://${DOMAIN}:9080;
     }
 
-    location ~ ^/contact-us {
+    location ^~ /contact-us {
         root $PROJECT_DIR/node_contactus/public;
         try_files \$uri \$uri/ index.html;
     }
 
-    location /contact-us/submit {
+    location ^~ /contact-us/submit {
         proxy_set_header Upgrade \$http_upgrade;
         proxy_set_header Connection "upgrade";
         proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
