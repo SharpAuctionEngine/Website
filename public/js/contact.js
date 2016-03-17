@@ -10,7 +10,7 @@ jQuery(function($)
         $.ajax(
         {
             type: "POST",
-            url: "/contacts-us/submit",
+            url: "/contact-us/submit",
             data: $data.serialize(),
          success: function()
          {
