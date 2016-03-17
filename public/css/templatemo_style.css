@@ -1357,6 +1357,10 @@ dd{margin-left:0}
   .bio_hide {
     display:none;
     }
+    .mobile
+    {
+      width:50px;
+    }
  }
 @media (max-width:414px){
     
@@ -1372,7 +1376,3 @@ dd{margin-left:0}
  
 }
 
-.iphone
-{
-  -webkit-user-select: none;
-}
