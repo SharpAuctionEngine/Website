@@ -22,7 +22,7 @@ $(function($) {
             '$form.serialize()':$form.serialize(),
         });
 
-        if (isValidEmailAddress(email)) {
+        // if (isValidEmailAddress(email)) {
             $.ajax({
                 method: "POST",
                 url: "/contact-us/submit",
@@ -58,10 +58,10 @@ $(function($) {
                  }
                 },
             });
-        } else {
-            bootbox.alert('Invalid Email Address');
+        // } else {
+            // bootbox.alert('Invalid Email Address');
 
-        }
+        // }
         return false; // prevent page refresh
     });
 });
