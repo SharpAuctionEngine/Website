@@ -9,7 +9,7 @@ function resetContactUsForm ()
     $("#email").val(''); // reset field after successful submission
     $("#msg").val(''); // reset field after successful submission
     $("#phoneNumber").val('');
-    $("#subject").val('');
+    $("#subject").val(0);
 }
 
 $(function($) {
@@ -28,13 +28,34 @@ $(function($) {
                 url: "/contact-us/submit",
                 data: $form.serialize(),
                 success: function() {
+                    $(' #messagebag ').remove();
+                    // fg.removeClass('has-error');
+                    $('.form-group').removeClass('has-error');
+
                     bootbox.alert('Your message has been sent.Thank you!');
                     resetContactUsForm();
                 },
-                error: function() {
+                error: function(xhr, textStatus, errorThrown) {
+                    $(' #messagebag ').remove();
+                    
+                     console.error({
+                    textStatus: textStatus,
+                    'xhr.response': xhr.responseJSON || xhr.responseText,
+                    errorThrown:errorThrown,
+                });
+                var json= xhr.responseJSON || xhr.responseText ||{};
+                     var alerts =new MessageBag();
+                       if(xhr.responseJSON.errors)
+                    {
 
+                    jQuery.each(xhr.responseJSON.errors, function(key, value) {
+                     alerts.add(value.field,value.message);
+
+                    });
+                     alerts.sprinkle('form:first');
                     bootbox.alert('There was an error in sending message. Please try again!');
 
+                 }
                 },
             });
         } else {
