@@ -103,7 +103,7 @@ server {
         try_files \$uri \$uri/ index.html;
     }
 
-    location ^~ /auctioneer-signup/v1/submit {
+    location ^~ /auctioneer-signup/v1/ {
         proxy_set_header Upgrade \$http_upgrade;
         proxy_set_header Connection "upgrade";
         proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
