@@ -93,7 +93,7 @@ server {
 
     location / {
         # root $PROJECT_DIR/public;
-        try_files \$uri \$uri/ index.html;
+        try_files \$uri \$uri.html \$uri/ index.html;
     }
 
     # TODO verify this is best # https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms
