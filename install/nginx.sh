@@ -100,7 +100,7 @@ server {
     # e.g. does "match best non-regex" subvert the malicious bot code upstairs?
     location ^~ /auctioneer-signup/ {
         root $PROJECT_DIR/node_asu/public;
-        try_files \$uri \$uri/ index.html;
+        try_files \$uri \$uri/ auctioneer-signup/index.html;
     }
 
     location ^~ /auctioneer-signup/v1/ {
