@@ -248,10 +248,10 @@ src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
         </div>
         <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
-
+		 <!-- Ending Main Content -->
         <!-- TemplateBeginEditable name="Script" -->
 
-        <!-- Ending Shit -->
+       
 
         <!--<script src="js/stickUp.min.js"  type="text/javascript"></script>-->
         <script src="js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
