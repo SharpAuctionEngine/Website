@@ -67,7 +67,7 @@ http://www.templatemo.com/tm-395-urbanic
             }
 
             .saeNav > ul li a {
-                
+
                 background: white !important;
                 color: #7ABFD0 !important;
                webkit-box-shadow: none!important;
@@ -86,7 +86,42 @@ http://www.templatemo.com/tm-395-urbanic
 
             .demo-btn{
                 margin-bottom:16px;
-                font-weight: bold; 
+                font-weight: bold;
+            }
+
+            .demo-tile-holder  p {
+              font-size: 120%;
+              background-color: rgba(211, 211, 211, 0.6);
+              border-radius: 5px;
+            }
+
+            #demo-tile1{
+              background: linear-gradient(rgba(211, 211, 211, 0.3),rgba(211, 211, 211, 0.3)), url('images/abc_real_estate.jpg');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              border: 2px solid #787878;
+              border-radius: 2px;
+            }
+
+            #demo-tile2{
+              background: linear-gradient(rgba(211, 211, 211, 0.3),rgba(211, 211, 211, 0.3)), url('images/acme_estate_sales.png');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              border: 2px solid #787878;
+              border-radius: 2px;
+
+            }
+
+            #demo-tile3{
+              background: linear-gradient(rgba(211, 211, 211, 0.3),rgba(211, 211, 211, 0.3)), url('images/123_construction.jpg');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              border: 2px solid #787878;
+              border-radius: 2px;
+
             }
 
         </style>
@@ -236,13 +271,13 @@ src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
             </div>
         </div>
     </nav>
-</section> 
-    
-    
-<!-- PORTED HTML FROM DEMO.BID-->    
+</section>
+
+
+<!-- PORTED HTML FROM DEMO.BID-->
 
 <div class="container">
-    <section class="alerts col-xs-12"></section>                                            
+    <section class="alerts col-xs-12"></section>
 </div>
 
 <section class="btm-margin-section" style="display: block; position: relative; opacity: 1; width: auto; height: auto;">
@@ -260,27 +295,43 @@ src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
             </div>
         </div>
         <div class="row btm-margin-section">
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center" style="min-height: 1px;">
-                 <a href="https://abcrealestate.sae.bid"><img src="https://abcrealestate.sae.bid/uploaded/photos/92/8a/2788_big_0000.jpg" alt="Real Estate" style="width:240px;height:240px;border:0" /></a>
-                <p class="text-center margin-top-20 text-xs">
-                    Elevate your real estate auctions with a full-width image carousel, a list view option, and custom themes and colors.
-                </p> 
-                <a class="demo-btn btn btn-success btn-lg margin-top-20" href="https://abcrealestate.sae.bid/">Enter Real Estate Demo</a>
+
+            <div class="demo-tile-holder col-xs-12 col-md-4 col-lg-4"> <!-- http://stackoverflow.com/a/29576362 -->
+              <div id="demo-tile1" class="col-xs-12 col-md-12 col-lg-12 text-center">
+                  <a href="https://abcrealestate.sae.bid/" target="_blank">
+                    <div style="width:240px;height:240px;"></div>
+                  </a>
+                   <p class="text-center margin-top-20">
+                      Elevate your real estate auctions with a full-width image carousel, a list view option, and custom themes and colors.
+                  </p>
+                  <a class="demo-btn btn btn-success btn-lg margin-top-20" href="https://abcrealestate.sae.bid/" target="_blank">Enter Real Estate Demo</a>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center" style="min-height: 1px;">
-                <img src="https://abcrealestate.sae.bid/uploaded/photos/f3/87/2787_big_0000.jpg" alt="Construction Equipment" style="width:240px;height:240px;border:0" />
+
+            <div class="demo-tile-holder col-xs-12 col-md-4 col-lg-4">
+              <div id="demo-tile2" class="col-xs-12 col-md-12 col-lg-12 text-center">
+                <a href="https://acmeestatesales.sae.bid/" target="_blank">
+                  <div style="width:240px;height:240px;"></div>
+                </a>
                 <p class="text-center margin-top-20">
-                    Auction anything--including construction equipment--with SAE using your own branded auction website.
-                </p> <a class="demo-btn btn btn-success btn-lg margin-top-20"  href="https://123constructionequipment.sae.bid/">Enter Equipment Demo</a>
+                      Attract more bidders to your estate sale auctions with our built-in search engine optimization (SEO) feature.
+                </p>
+                <a class="demo-btn btn btn-success btn-lg margin-top-20" href="https://acmeestatesales.sae.bid/" target="_blank">Enter Estate Sales Demo</a>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center" style="min-height: 1px;">
-                <img src="https://abcrealestate.sae.bid/uploaded/photos/73/b1/2786_big_0000.jpg" alt="Estate Sales" style="width:240px;height:240px;border:0" />
+
+            <div class="demo-tile-holder col-xs-12 col-md-4 col-lg-4">
+              <div id="demo-tile3" class="col-xs-12 col-md-12 col-lg-12 text-center">
+                <a href="https://123constructionequipment.sae.bid/" target="_blank">
+                  <div style="width:240px;height:240px;"></div>
+                </a>
                 <p class="text-center margin-top-20">
-                    Attract more bidders to your estate sale auctions with our built-in search engine optimization (SEO) feature.
-                </p> 
-                <br><!--line break needed to even the buttons, may need to remove in the future ~ quick fix -->
-                <a class="demo-btn btn btn-success btn-lg margin-top-20" href="https://acmeestatesales.sae.bid/">Enter Estate Sales Demo</a>
+                      Auction anything--including construction equipment--with SAE using your own branded auction website.
+                </p>
+                <a class="demo-btn btn btn-success btn-lg margin-top-20"  href="https://123constructionequipment.sae.bid/" target="_blank">Enter Equipment Demo</a>
+              </div>
             </div>
+
         </div>
 
     <div class="row " >
@@ -306,20 +357,20 @@ src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
                         <input type=hidden name="oid" value="00Do0000000ZekX">
                         <input type=hidden name="retURL" value="https://demo.bid/watch-demo">
 
-                                                
-                        <div class="col-sm-6"> 
+
+                        <div class="col-sm-6">
                         <label for="first_name" class="form-label">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" class="form-control" /><br>
                         </div>
                         <div class="col-sm-6">
                         <label for="last_name" class="form-label">Last name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" class="form-control" /><br>
-                        </div> 
+                        </div>
                         <div class="col-sm-6">
                         <label for="email" class="form-label">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" class="form-control" /><br>
                         </div>
-                        <div class="col-sm-6"> 
+                        <div class="col-sm-6">
                         <label for="phone" class="form-label">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" class="form-control" /><br>
-                        </div> 
-                        <div class="col-sm-6"> 
+                        </div>
+                        <div class="col-sm-6">
                         <label for="city" class="form-label">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" class="form-control" /><br>
                         </div>
                         <div class="col-sm-6">
@@ -329,7 +380,7 @@ src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
                         <label for="company" class="form-label">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" class="form-control" /><br>
                         </div>
 
-                        <div class="col-sm-6"> 
+                        <div class="col-sm-6">
                         <label for="state" class="00No0000008bFCc">Auction Types:</label>
                         <select  id="00No0000008bFCc" multiple="multiple" name="00No0000008bFCc" title="Auction Types" class="form-control">
                           <option value="Antiques & Collectibles">Antiques & Collectibles</option>
@@ -349,7 +400,7 @@ src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
                         <input type="submit"  class="btn btn-primary btn-block" name="submit" class="form-control">
                         </div>
                         </form>
-                    
+
                 </div>
             </div>
         </div>
@@ -375,7 +426,7 @@ src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
 
 
 
-   
+
 
         <!-- Footer -->
         <!-- NOTE: I feel like this needs help. Also, the Linkedin icon falls off the page a little at certain sizes. -->
@@ -498,7 +549,7 @@ src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
          <!-- Ending Main Content -->
         <!-- InstanceBeginEditable name="Script" -->
 
-       
+
 
         <!--<script src="js/stickUp.min.js"  type="text/javascript"></script>-->
         <script src="js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
