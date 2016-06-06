@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><!-- InstanceBegin template="/Templates/Template.dwt" codeOutsideHTMLIsLocked="false" -->
+
     <head>
+        <!-- InstanceBeginEditable name="doctitle" -->
+        <!-- InstanceEndEditable -->
         <title>SAE</title>
+
         <meta name="keywords" content="auction, software, online, all-in-one, mobile" />
-		<meta name="description" content="Sharp Auction Engine is your all-in-one resource for online auctions." />
-<!--
+        <meta name="description" content="Sharp Auction Engine is your all-in-one resource for online auctions." />
+        <!--
 
 Urbanic Template
 
@@ -13,500 +17,489 @@ http://www.templatemo.com/tm-395-urbanic
 -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--<link rel="shortcut icon" href="PUT YOUR FAVICON HERE">-->
-        
+        <link rel="shortcut icon" href="favicon.png">
+
         <!-- Google Web Font Embed -->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-        
-        <!-- Bootstrap core CSS -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,800,800italic' rel='stylesheet' type='text/css'>
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+        <!--<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css'> -->
+        <link rel="stylesheet" href="fonts/font-awesome.css">
         <link href="css/bootstrap.css" rel='stylesheet' type='text/css'>
+        <!-- InstanceBeginEditable name="Style" -->
+        <!-- Bootstrap core CSS -->
+        <!-- <link href="css/bootstrap.css" rel='stylesheet' type='text/css'>-->
 
+        <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
         <!-- Custom styles for this template -->
-        <link href="js/colorbox/colorbox.css"  rel='stylesheet' type='text/css'>
-        <link href="css/templatemo_style.css"  rel='stylesheet' type='text/css'>
+        <link href="js/colorbox/colorbox.css" rel='stylesheet' type='text/css'>
 
+<!--
+        <link href="css/templatemo_style.css" rel='stylesheet' type='text/css'>
+-->
+
+        <!--   Productions css  -->
+
+        <link href="css/style052616.css" rel='stylesheet' type='text/css'>
+<!---->
+        <!-- InstanceEndEditable -->
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
-    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/open-sans:n3,n8,n7,n6:default.js" type="text/javascript"></script>
-</head>
-    
+        <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+        <script>
+var __adobewebfontsappname__ = "dreamweaver"
+        </script>
+        <script src="http://use.edgefonts.net/open-sans:n3,n8,n7,n6:default.js" type="text/javascript"></script>
+        <!-- InstanceBeginEditable name="head" -->
+        <!-- InstanceEndEditable -->
+        <!-- Facebook Pixel Code -->
+        <script>
+! function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+        n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+}(window,
+    document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1518592401781359');
+fbq('track', "PageView");
+fbq('track', 'ViewContent');
+fbq('track', 'Lead');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
+/></noscript>
+        <!-- End Facebook Pixel Code -->
+    </head>
+
     <body>
-<div class="templatemo-top-menu">
-    <div class="container">
-                
-		<!-- Static navbar -->
-		<!-- NOTE: Alignment and padding/margins/something is screwy. Also the button should be behaving like the other buttons: white text with a darkening effect on hover. -->
-		<div class="navbar navbar-default" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+        <div class="templatemo-top-menu">
+            <div class="container">
+
+                <!-- Static navbar -->
+                <!-- NOTE: Alignment and padding/margins/something is screwy. The button should be behaving like the other buttons: white text with a darkening effect on hover. Needs scrolling with the page. -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbarCollapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <img src="images/logo-horizontal.png" class="img-responsive" alt="Sharp Auction Engine" title="SAE logo">
-                </div>
-                <div class="navbar-collapse collapse" id="templatemo-nav-bar">
-                    <ul class="nav navbar-nav navbar-right" style="">
-                        <li><a href="/">HOME</a></li><!-- Link to Home Page -->
-                        <li><a href="">ABOUT</a></li><!-- Link to About Page -->
-                        <li><a href="/features.html">FEATURES</a></li><!-- Link to Features Page -->
-                        <li><a href="/demo.html">DEMO</a><!-- Link to Demo Website-->
-                        <li><a href="">PRICING</a></li><!-- Link to Pricing Page -->
-                        <li class="active"><a href="">SUPPORT</a></li><!-- Link to Support Page -->
-                        <li><a class="btn btn-md btn-green" href="#" role="button" style="margin: 10px;"><strong>Get Started!</strong></a></li><!-- Link to Pricing Page -->
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div><!--/.container-fluid -->
-        </div><!--/.navbar -->
-    </div><!-- /container -->
-</div>
-
-
-<!-- Banner Image -->
-<!-- NOTE: A small gap shows between the nav bar and top of banner. Also having troubles when screen resized, the logo and text moves up too far and sits behind the nav bar -->
-<div id="templatemo-carousel" class="carousel slide" data-ride="carousel">
-   <div class="carousel-inner">
-       <div class="item active">
-           <div class="container">
-               <div class="carousel-caption">
-                  <img class="img-responsive center-block" src="images/logo-shadow.png" alt="Sharp Auction Engine"/>
-                  <h1>All-in-One Resource for Online Auctions</h1>
-                  <p><a class="btn btn-lg btn-green" href="#" role="button" style="margin: 20px;"><strong>Start Free Trial</strong></a><!-- Link to Pricing Page --> 
-                     <a class="btn btn-lg btn-orange" href="#" role="button"><strong>Learn More</strong></a></p><!-- Link to Features Page -->
-               </div>
-           </div>
-       </div>
-   </div>
-</div>
-
-        
-<!-- 4 Highlights -->       
-<div class="templatemo-service">
-    <div class="container">
-        <div class="row">
-            
-            <!-- Highlight 1 --> 
-            <div class="col-sm-3 col-xs-6">
-                <div class="templatemo-service-item" >
-                    <div class="text-center">
-                        <img class="img-responsive center-block" src="images/icon-id-card.png" alt="id card"/>
-                        <h4>Private Label</h4>
-                        <p>Your brand, your bidders, and your rules.</p>
-                        <br class="clearfix"/>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Highlight 2 -->
-            <div class="col-sm-3 col-xs-6">
-                <div class="templatemo-service-item" >
-                    <div class="text-center">
-                        <img class="img-responsive center-block" src="images/icon-phone.png" alt="cell phone"/>
-                        <h4>Mobile Friendly</h4>
-                        <p>Access auctions anywhere from any device.</p>
-                        <br class="clearfix"/>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Highlight 3 -->
-            <div class="col-sm-3 col-xs-6">
-                <div class="templatemo-service-item" >
-                    <div class="text-center">
-                        <img class="img-responsive center-block" src="images/icon-target.png" alt="target"/>
-                        <h4>All-in-One Engine</h4>
-                        <p>No downloads or additional software needed.</p>
-                        <br class="clearfix"/>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Highlight 4 -->
-            <div class="col-sm-3 col-xs-6">
-                <div class="templatemo-service-item" >
-                    <div class="text-center">
-                        <img class="img-responsive center-block" src="images/icon-caculator.png" alt="calculator"/>
-                        <h4>Competitive Pricing</h4>
-                        <p>No contracts and no set-up or listing fees.</p>
-                        <br class="clearfix"/>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-    </div>
-</div>
-
-<!-- Features List & Device Mockups --> 
-<!-- NOTE: I'd like it if the features list and device images were horizontally centered with each other -->
-<div class="templatemo-service">
-    <div class="container">
-        <div class="row">
-            
-            <!-- Features List -->
-            <div class="col-sm-6">
-                <div class="templatemo-service-item" >
-                    <div class="text-center">
-                        <h3>All the features you love:</h3>
-                    </div>
-                    <div class="height30"></div>
-                        
-                        <!-- Column 1 -->
-                        <div class="row">
-                            <div class="col-sm-6">
-                            <p>Auto Credit Card Payments<br><br>
-                            Robust Invoice System<br><br>
-                            Detailed Auction Reports<br><br>
-                            Dynamic Bid Extension<br><br>
-                            Custom Theme Options<br></p>
-                            </div>
-                        
-                        <!-- Column 2 -->
-                            <div class="col-sm-6">
-                            <p>Mobile Responsive<br><br>
-                            Auto Assign Photos to Items<br><br>
-                            Dynamic Page Refreshing<br><br>
-                            Staggered Bid Endings<br><br>
-                            Wavebid Compatibility</p>
-                            </div>
+                            <a href="/">
+                                <img src="images/SHARP_LOGO.svg" class="img-responsive SAE-logo" alt="Sharp Auction Engine" title="SAE logo">
+                            </a>
                         </div>
-    
-                    <br class="clearfix"/>
-                </div>
-            </div>
-
-            <!-- Device Mockups -->                   
-            <div class="col-sm-6">
-                <div class="templatemo-service-item" >
-                    <div class="text-center">
-                        <div id="Carousel" class="carousel slide carousel-fade col-xs-12 col-offset-2">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img class="img-responsive center-block" src="images/device-imac.png" alt="Desktop"/>
-                                </div>
-                                <div class="item">
-                                    <img class="img-responsive center-block"  src="images/device-laptop.png" alt="Laptop"/>
-                                </div>
-                                <div class="item">
-                                    <img class="img-responsive center-block" src="images/device-ipad.png" alt="Tablet"/>
-                                </div>
-                                <div class="item">
-                                    <img class="img-responsive center-block" src="images/device-iphone.png" alt="Cell Phone"/>
-                                </div>
-                            </div>
-						</div>
-                        
-                        <br class="clearfix"/>
-                        
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-    </div>
-</div>
-
-
-<!-- Demo -->
-<!-- NOTE: Could we get a shadow on the bottom of this section too? The images' overlay should just cover the circle. Also the images aren't being responsive and the overlay takes away the linking ability. ALSO... make the links open in a new tab -->
-<div class="templatemo-team" id="templatemo-about">
-    <div class="container">
-        <div class="row">
-            <div class="templatemo-line-header">
-                <div class="text-center">
-                    <h2>See SAE in Action!</h2>
-                </div>
-            </div>
-        </div>
-        <div class="clearfix"> </div>
-            <ul class="row row_team">
-                
-                <!-- Real Estate Demo -->
-                <li class="col-xs-4">
-                    <div class="text-center">
-                        <div class="image-wrapper">
-                            <span class="image-overlay"></span>
-                            <a href="https://abcrealestate.sae.bid/">
-                                <img class="img-responsive" src="images/demo-real-estate.png" alt="Real Estate Auction Demo"/>
-                        	</a>
+                        <div class="navbar-collapse collapse navbarCollapse" id="templatemo-nav-bar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="index.html">HOME</a></li>
+                                <!-- Link to Home Page -->
+                                <li><a href="about.html">ABOUT</a></li>
+                                <!-- Link to About Page -->
+                                <li><a href="features.html">FEATURES</a></li>
+                                <!-- Link to Features Page -->
+                                <li><a href="demo.html">DEMO</a>
+                                    <!-- Link to Demo Website-->
+                                    <!-- <li ><a href="/auctioneer-signup" target="_blank">PRICING</a></li>-->
+                                    <!-- Link to Pricing Page -->
+                                    <li><a href="support.html">SUPPORT</a></li>
+                                    <!-- Link to Support Page -->
+                                    <li><a href="contact-us.html">CONTACT</a></li>
+                                    <li><a class="btn btn-md btn-green" href="/auctioneer-signup" target="_blank" role="button" style="margin: 10px;"><strong>Get Started!</strong></a></li>
+                                    <!-- Link to Pricing Page -->
+                            </ul>
                         </div>
-                        <div class="team-inner">
-                            <p class="team-inner-header">Real Estate Auction Demo</p>
-                        </div>
+                        <!--/.nav-collapse -->
                     </div>
-                </li>
-                
-                <!-- Equipment Demo -->
-                <li class="col-xs-4">
-                    <div class="text-center">
-                        <div class="image-wrapper">
-                            <span class="image-overlay"></span>
-                            <a href="https://123constructionequipment.sae.bid/">
-                                <img class="img-responsive" src="images/demo-equipment.png" alt="Equipment Auction Demo"/>
-                        	</a>
-                        </div>
-                        <div class="team-inner">
-                            <p class="team-inner-header">Equipment Auction Demo</p>
-                        </div>
-                    </div>
-                </li>
-                
-                <!-- Estate Sale Demo -->
-                <li class="col-xs-4">
-                    <div class="text-center">
-                        <div class="image-wrapper">
-                            <span class="image-overlay"></span>
-                            <a href="https://acmeestatesales.sae.bid/">
-                                <img class="img-responsive" src="images/demo-estate-sale.png" alt="Estate Sale Auction Demo" />
-                        	</a>
-                        </div>
-                        <div class="team-inner">
-                            <p class="team-inner-header">Estate Sale Auction Demo</p>
-                        </div>
-                    </div>
-                </li>
-                
-            </ul>
+                    <!--/.container-fluid -->
+                </div>
+                <!--/.navbar -->
+
+            </div>
+            <!-- /container -->
         </div>
-    </div>
+        <!-- InstanceBeginEditable name="mainContent" -->
 
 
-<!-- Testimonials -->
-<!-- NOTE: Spacing is weird and there needs to be line bordering the top and bottom of this section per Carolyn. I also don't want the longer testimonials to shift the page up and down. -->
-<div class="container">
-	
-    <!-- Testimonials Header -->
-    <div class="row">
-		<div class="col-xs-12 text-center">
-        	<h2>Don't just take our word for it:</h2>
-        </div>
-    </div>
-    
-    <!-- Testimonials Carousel -->
-    <div class="row">
-    	<div class="col-xs-12">
-            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-
-            <!-- Bottom Carousel Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#quote-carousel" data-slide-to="1"></li>
-                <li data-target="#quote-carousel" data-slide-to="2"></li>
-                <li data-target="#quote-carousel" data-slide-to="3"></li>
-                <li data-target="#quote-carousel" data-slide-to="4"></li>
-            </ol>
-    
-            <!-- Carousel Slides / Quotes -->
-            <div class="carousel-inner">
-    
-            <!-- Quote 1 -->
-            <div class="item active">
-              <div class="row">
-                <div class="col-sm-12">
-                   <h4>&ldquo;Sharp Auction Engine is a great product for an auctioneer looking to get started in the online auction world… It’s a clean and simple solution for both bidders and the auctioneer alike. The customer service staff at Sharp is top quality, and they listen to their user base when it comes to adding features.&rdquo;</h4>
-                   <h5><strong>Richie Trice<br>Auctioneer at ClerkLink</strong></h5>
-                 </div>
-               </div>
-            </div>
-    
-            <!-- Quote 2 -->
-            <div class="item">
-              <div class="row">
-                <div class="col-sm-12">
-                  <h4>&ldquo;Very slick interface! Easy for our bidders to use.&rdquo;</h4>
-                  <h5><strong>Steve Watson<br>Auctioneer at Firehouse Antiques & Collectibles</strong></h5>
-                </div>
-              </div>
-            </div>
-    
-            <!-- Quote 3 -->
-            <div class="item">
-              <div class="row">
-                <div class="col-sm-12">
-                  <h4>&ldquo;Very easy to navigate and get all the details you need. Love it!&rdquo;</h4>
-                  <h5><strong>Sue Rogers<br>Bidder</strong></h5>
-                </div>
-              </div>
-            </div>
-    
-            <!-- Quote 4 -->
-            <div class="item">
-              <div class="row">
-                <div class="col-sm-12">
-                  <h4>&ldquo;The pros are many, but the most important part to me is the great support from
-    the staff. I am not very technically savvy so personal support is important to me.&rdquo;</h4>
-                  <h5><strong>Nicolas Mendoza<br>BIC & Auctioneer at Mendoza Realty & Auction Company</strong></h5>
-                </div>
-              </div>
-            </div>
-    
-            <!-- Quote 5 -->
-            <div class="item">
-              <div class="row">
-                <div class="col-sm-12">
-                  <h4>&ldquo;Easier to use than both AuctionZip and Proxibid.&rdquo;</h4>
-                  <h5><strong>Ernie Taylor<br>Auctioneer at Top Team Auctions</strong></h5>
-                </div>
-              </div>
-            </div>
-
-				</div>
-			</div>                          
-		</div>
-	</div>
-</div>
-
-
-<!-- Commercial -->
-<!-- NOTE: Those margins/padding/whatevs are out of control -->
-<div class="templatemo-video">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="vid">
-                	<iframe width="560" height="315" src="https://www.youtube.com/embed/jBbbIPVQyD0" frameborder="0" allowfullscreen="">
-                    </iframe>
-            	</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Contact & Map -->
-<!-- NOTE: Can we get an indicator on there that actually marks where the office is? -->
-<div id="templatemo-contact">
-    <div class="container">
-        <div class="row">
-        
-        	<!-- Map -->
-            <div class="col-md-8">
-                <div class="templatemo-contact-map" id="map-canvas"> </div>  
-                <div class="clearfix"></div>
-            </div>
-            
-            <!-- Contact Info -->
-            <div class="col-md-4 contact_right">
-                <p>Need something? Or just want to chat? We'd love to hear from you! Our office is open Monday through Friday from 9AM to 5PM CST.</p>
-                <p><img src="images/location.png" alt="icon 1" /> 801 Franklin St, Huntsville, AL 35801</p>
-                <p><img src="images/phone1.png"  alt="icon 2" /> 256-653-5273</p>
-                <p><img src="images/globe.png" alt="icon 3" /><a class="link_orange" href="#"><span class="txt_orange">www.sharpauctionengine.com</span></a></p><!-- Link to Home Page -->
-            </div>
-            
-        </div>
-    </div>
-</div>
-
-
-<!-- Footer -->
-<!-- NOTE: I feel like this needs help. Also, the Linkedin icon falls off the page a little at certain sizes. -->
-<div class="templatemo-footer" >
-    <div class="footer_container">
-        
-            <!-- Hot Links -->
-        <div class="row">	
-            <div class="col-sm-9">
-                <div class="row text-center">
-                    <div class="col-sm-2">
-                        <h5><strong>Home</strong></h5><!-- Link to Home Page -->
-                    </div>
-                    <div class="col-sm-2">
-                        <h5><strong>About</strong></h5><!-- Link to About Page -->
-                        <p>Company Timeline <!-- Link to About Page (Company Timeline Anchor) -->
-                        <br>Meet the Execs <!-- Link to About Page (Meet the Execs Anchor) -->
-                        </p>
-                    </div>
-                    <div class="col-sm-2">
-                        <h5><strong>Features</strong></h5><!-- Link to Features Page -->
-                        <p>Product Features <!-- Link to Features Page (Product Features Anchor) -->
-                        <br>Demo <!-- Link to Features Page (Demo Anchor) -->
-                        <br>What's Next? <!-- Link to Features Page (What's Next Anchor) -->
-                        <br>Product Timeline <!-- Link to Features Page (Product Timeline Anchor) -->
-                        </p>
-                    </div>
-                    <div class="col-sm-2">
-                        <h5><strong>Pricing</strong></h5><!-- Link to Pricing Page -->
-                        <p>Choose Your Plan <!-- Link to Pricing Page (Choose Your Plan Anchor) -->
-                        <br>Billing & Payments <!-- Link to Pricing Page (Billing & Payments Anchor) -->
-                        <br>Demo <!-- Link to Pricing Page (Demo Anchor) -->
-                        </p>
-                    </div>
-                    <div class="col-sm-2">
-                        <h5><strong>Support</strong></h5><!-- Link to Support Page -->
-                        <p>Support Policy <!-- Link to Support Page (Support Policy Anchor) -->
-                        <br>Resources <!-- Link to Support Page (Resources Anchor) -->
-                        <br>Contact <!-- Link to Support Page (Contact Anchor) -->
-                        <br>Training <!-- Link to Support Page (Training Anchor) -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        
-            <!-- Logo -->
-            <div class="col-sm-3 text-center">
-                <img src="images/logo-150px.png" class="image-responsive" alt="SAE logo">
-            </div>
-        </div>
-            
-            <!-- Email Sign Up -->
-        <div class="row">	
-            <div class="col-sm-9">
-                <div class="row text-center">
-                    <form action="#"><!-- Should sign folks up for your email list - MailChimp? -->
-                        <div class="input-group center-block">
-                            <input class="btn btn-med" name="email" id="email" type="email" placeholder="enter your email address for updates" required>
-                            <button class="btn btn-med btn-green" type="success">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            
-            <!-- Social Links -->   
-            <div class="col-sm-3 text-center">   
+        <!-- Banner -->
+        <!-- NOTE: The image needs to rest on the right side of the screen. The image is not responsive. -->
+        <div class="support-banner">
+            <div class="container">
                 <div class="row">
-                    <div class="col-xs-3">
-                        <a href="https://www.facebook.com/SharpAuctionEngine/">
-                            <span class="social-icon-fb"></span>
-                        </a>
+
+                    <!-- Banner Image -->
+                    <div class="col-xs-0 col-sm-4 col-md-4 col-lg-4 noSmall">
+                        <img class="img-responsive jaime" src="images/support-jaime.png" alt="SAE Support Staff" />
                     </div>
-                    <div class="col-xs-3">
-                        <a href="https://twitter.com/auctionengine">
-                            <span class="social-icon-twitter"></span>
-                        </a>
+
+                    <!-- Banner Text -->
+                    <div class="col-xs-12 col-sm-8 col-md-8">
+                        <div class="banner-header">SAE offers multiple layers of support</div>
+                        <div class="banner-subtext">Whether you have an IT department or are handling the software yourself, we know that technology isn’t always as simple as it seems. We also understand that different people prefer different methods of assistance. Keeping this in mind, we offer three layers of support to get your <nobr>auctions rolling.</nobr></div>
+                        
                     </div>
-                    <div class="col-xs-3">
-                        <a href="http://news.sharpauctionengine.com/"><!-- Or where ever the blog is -->
-                            <span class="social-icon-rss"></span>
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="https://www.linkedin.com/company/sharp-auction-engine">
-                            <span class="social-icon-linkedin"></span>
-                        </a>
-                    </div>		
+
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="footer_bottom_content text-center">
-        <span>Copyright © 2084 Sharp Auction Engine</span>
-    </div>
+
+
+        <!-- Featured Features -->
+        <div class="templatemo-service greyer-back">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Resources Header -->
+                        <h2 class="support-headers">Resources</h2>
+
+
+                    <!-- Resource Callout 1 -->
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="support-block resources">
+                                <a href="http://support.sharpauctionengine.com/"><img class="img-responsive center-block wider" src="images/support-eye.png" alt="eye icon" /></a>
+                                <a href="http://support.sharpauctionengine.com/"><h4>Video Tutorials</h4></a>
+                                <p>Watch &amp; learn exactly how to get your auction house <nobr>up and running</nobr></p>
+                                <br class="clearfix" />  
+                        </div>
+                    </div>
+
+
+                    <!-- Resource Callout 2 -->
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="support-block resources">
+                                <a href="http://handbook.sharpauctionengine.com/"><img class="img-responsive center-block taller" src="images/support-doc.png" alt="document icon" /></a>
+                                <a href="http://handbook.sharpauctionengine.com/"><h4>Online Guide</h4></a>
+                                <p>Learn exactly how to use our software with our online <nobr>user guide</nobr></p>
+                                <br class="clearfix" />  
+                        </div>
+                    </div>
+
+
+                    <!-- Resource Callout 3 -->
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="support-block resources">
+                                <a href="http://support.sharpauctionengine.com/"><img class="img-responsive center-block taller" src="images/support-info.png" alt="information symbol icon" /></a>
+                                <a href="http://support.sharpauctionengine.com/"><h4>FAQs &amp; How-Tos</h4></a>
+                                <p>Most answers can be found here, look to see if you can find what you need</p>
+                                <br class="clearfix" />  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="templatemo-service grey-back">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Resources Header -->
+                        <h2 class="support-headers training">Training</h2>
+
+
+                    <!-- Training Callout 1 -->
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="support-block training">
+                                <img class="img-responsive center-block taller" src="images/support-float.png" alt="float icon" />
+                                <h4>New Customer</h4>
+                                <p>All new customers receive streamlined training through the first auction</p>
+                                <br class="clearfix" />  
+                        </div>
+                    </div>
+
+
+                    <!-- Training Callout 2 -->
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="support-block training">
+                                <img class="img-responsive center-block taller" src="images/support-calendar.png" alt="calender icon" />
+                                <h4>Quarterly Workshop</h4>
+                                <p>Free quarterly training workshops for all customers, new or exsisting</p>
+                                <br class="clearfix" />  
+                        </div>
+                    </div>
+
+
+                    <!-- Training Callout 3 -->
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="support-block training">
+                                <img class="img-responsive center-block taller" src="images/support-house.png" alt="house icon" />
+                                <h4>On-Site Training</h4>
+                                <p>We’ll come to you for $750 per day plus travel accomodations. Call to schedule.</p>
+                                <br class="clearfix" />  
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="templatemo-service white-back">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Resources Header -->
+                        <h2 class="support-headers contact">Contact</h2>
+
+
+                    <!-- Training Callout 1 -->
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="support-block training">
+                                <img class="img-responsive center-block wider" src="images/support-email.png" alt="email icon" />
+                                <h4>Email Support</h4>
+                                <p>Responses guaranteed within <nobr>two hours</nobr></br><a class="emailAddress" href="mailto:help@sharpauctionengine.com">help@sharpauctionengine.com</a></p>
+                                <br class="clearfix" />  
+                        </div>
+                    </div>
+
+
+                    <!-- Training Callout 2 -->
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="support-block training">
+                                <img class="img-responsive center-block taller" src="images/support-social.png" alt="social icon" />
+                                <h4>Social Media</h4>
+                                <p>Say hi. Ask questions. <nobr>Get connected.</nobr></br>
+                                    <a href="http://www.linkedin.com/company/sharp-auction-engine">
+                                        <svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg>
+
+                                    </a>
+                                    <a href="https://www.facebook.com/SharpAuctionEngine">
+                                        <svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"/></svg>
+
+                                    </a>
+
+                                    <a href="https://twitter.com/AuctionEngine">
+                                        <svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg>
+
+                                    </a>
+                                </p>
+                                <br class="clearfix" />  
+                        </div>
+                    </div>
+
+
+                    <!-- Training Callout 3 -->
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="support-block training">
+                                <img class="img-responsive center-block taller" src="images/support-phone.png" alt="phone icon" />
+                                <h4>Phone Support</h4>
+                                <p>Monday - Friday, <nobr>8am to 5 pm ct.</nobr></br>
+                                    <a href="tel:1-256-261-3159">(256) 261-3159</a>
+                                </p>
+                                <br class="clearfix" />  
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- InstanceEndEditable -->
+
+        <!-- Footer -->
+        <!-- NOTE: I feel like this needs help. Also, the Linkedin icon falls off the page a little at certain sizes. -->
+        <div class="templatemo-footer">
+            <div class="footer_container">
+
+                <!-- Hot Links -->
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="row custom_width text-center">
+                            <div class="col-sm-3">
+                                <h5><a href="index.html" class="link_hover footer_header"  ><strong>Home</strong></a></h5>
+                                <!-- Link to Home Page -->
+                            </div>
+                            <div class="col-sm-3">
+                                <h5><a href="about.html" class="link_hover footer_header" ><strong>About</strong></a></h5>
+                                <!-- Link to About Page -->
+                                <p><a href="about.html" class="link_hover footer_white">Company Timeline</a></p>
+                                <!-- Link to About Page (Company Timeline Anchor) -->
+                                <p><a href="about.html" class="link_hover footer_white">Meet the Execs</a>
+                                    <!-- Link to About Page (Meet the Execs Anchor) -->
+                                </p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h5><a href="features.html"  class="link_hover footer_header"><strong>Features</strong></a></h5>
+                                <!-- Link to Features Page -->
+                                <p><a href="features.html" class="link_hover footer_white">Product Features</a></p>
+                                <!-- Link to Features Page (Product Features Anchor) -->
+                                <p><a href="demo.html" class="link_hover footer_white">Demo</a></p>
+                                <!-- Link to Features Page (Demo Anchor) -->
+                                <p> <a href="features.html" class="link_hover footer_white">What's Next?</a>
+                                    <!-- Link to Features Page (What's Next Anchor) -->
+                                </p>
+                                <p><a href="features.html" class="link_hover footer_white">Product Timeline</a>
+                                    <!-- Link to Features Page (Product Timeline Anchor) -->
+                                </p>
+                            </div>
+                            <!--    <div class="col-sm-2">
+                        <h5><a href="/auctioneer-signup" class="link_hover footer_header" ><strong>Pricing</strong></a></h5>-->
+                            <!-- Link to Pricing Page -->
+                            <!-- <p><a href="/auctioneer-signup" class="link_hover footer_white" >Choose Your Plan</a> -->
+                            <!-- Link to Pricing Page (Choose Your Plan Anchor) -->
+                            <!-- </p><p><a href="/auctioneer-signup" class="link_hover footer_white" >Billing & Payments</a>-->
+                            <!-- Link to Pricing Page (Billing & Payments Anchor) -->
+                            <!-- </p><p><a href="https://demo.bid/" class="link_hover footer_white" >Demo</a> -->
+                            <!-- Link to Pricing Page (Demo Anchor) -->
+                            <!--</p>
+                    </div> -->
+                            <div class="col-sm-3">
+                                <h5><a href="support.html" class="link_hover footer_header" ><strong>Support</strong></a></h5>
+                                <!-- Link to Support Page -->
+                                <p><a href="http://support.sharpauctionengine.com/" class="link_hover footer_white">Support Policy</a>
+                                    <!-- Link to Support Page (Support Policy Anchor) -->
+                                </p>
+                                <p><a href="http://support.sharpauctionengine.com/" class="link_hover footer_white">Resources</a>
+                                    <!-- Link to Support Page (Resources Anchor) -->
+                                </p>
+                                <p><a href="http://contact.sharpauctionengine.com/" class="link_hover footer_white">Contact</a>
+                                    <!-- Link to Support Page (Contact Anchor) -->
+                                </p>
+                                <p><a href="http://support.sharpauctionengine.com/" class="link_hover footer_white">Training</a>
+                                    <!-- Link to Support Page (Training Anchor) -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="col-sm-3 text-center noSmall">
+                        <img src="images/logo-150px.png" class="image-responsive" alt="SAE logo">
+                    </div>
+                </div>
+
+                <!-- Email Sign Up -->
+                <div class="row emailSignUp">
+                    <div class="col-sm-6">
+                        <div class="row text-center">
+                            <form action="//sharpauctionengine.us13.list-manage.com/subscribe/post" method="post" target="_blank" novalidate>
+                                <!-- Should sign folks up for your email list - MailChimp? -->
+                                <input type="hidden" name="u" value="d782b8ddfadf37314e5e5c005">
+
+                                <input type="hidden" name="id" value="3a3f58257b">
+                                <div class="input-group center-block">
+                                    <input class="form-control" name="EMAIL" id="mce-EMAIL" type="email" placeholder="enter your email address for updates" style="width:60%;">
+
+                                    <button class="btn btn-med btn-green mobile" style="height:34px; width:80px; font-weight:bold;" type="success">Submit</button>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 text-center foot-contact">
+                        <a href="mailto:help@sharpauctionengine.com">help@sharpauctionengine.com</a>
+                        
+
+                    </div>
+
+
+                    <!-- Social Links -->
+                    <div class="col-sm-3">
+                        <p class="text-center">
+                            <a href="https://twitter.com/AuctionEngine" class="btn btn-grey">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/SharpAuctionEngine" class="btn btn-grey">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="http://www.linkedin.com/company/sharp-auction-engine" class="btn btn-grey">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="http://support.sharpauctionengine.com/customer/en/portal/topics/911678-blogs/articles" class="btn btn-grey">
+                                <i class="fa fa-rss"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
                 
-</div>
-                            
-                            
-<!-- Ending Shit -->
+                <div class="footer_bottom_content text-center">
+                    <hr>
+                    <span>Copyright © 2012 - 2016 <nobr>Sharp Auction Engine</nobr></span>
+                </div>
+
+        </div>
         <script src="js/jquery.min.js" type="text/javascript"></script>
-        <script src="js/bootstrap.min.js"  type="text/javascript"></script>
-        <script src="js/stickUp.min.js"  type="text/javascript"></script>
-        <script src="js/colorbox/jquery.colorbox-min.js"  type="text/javascript"></script>
-        <script src="js/templatemo_script.js"  type="text/javascript"></script>
-		<!-- templatemo 395 urbanic -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+		 <!-- Ending Main Content -->
+        <!-- InstanceBeginEditable name="Script" -->
+
+       
+
+        <!--<script src="js/stickUp.min.js"  type="text/javascript"></script>-->
+        <script src="js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="js/templatemo_script.js" type="text/javascript"></script>
+        <!-- templatemo 395 urbanic -->
+        <!-- InstanceEndEditable -->
+       <!--  <script src="https://widget.prudio.com/client.js?appid=335bc333-7dad-4bbd-8876-1cb2d1ffaa80" async></script>
+        <script>
+window._PrudioSettings = {
+    title: 'Chat with SAE staff', // Title of the window (on the top)
+    icon: 'prd-icon-btn-bubble', // Check the available icon bellow (default: prd-icon-btn-help)
+    buttonColor: 'green', // Color of the default button (default: rgba(0, 114, 176, 0.9))
+
+};
+        </script> -->
+        <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45737929-12', 'auto');
+  ga('send', 'pageview');
+</script>
+        <script type="text/javascript">
+$(function () {
+    var current_page_URL = location.href;
+    $("a").each(function () {
+        if ($(this).attr("href") !== "#") {
+            var target_URL = $(this).prop("href");
+            if (target_URL == current_page_URL) {
+                $('nav a').parents('li, ul').removeClass('active');
+                $(this).parent('li').addClass('active');
+                return false;
+            }
+        }
+    });
+});
+        </script>
+        
+    <!-- Start of Async HubSpot Analytics Code -->
+      <script type="text/javascript">
+        (function(d,s,i,r) {
+          if (d.getElementById(i)){return;}
+          var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+          n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2198921.js';
+          e.parentNode.insertBefore(n, e);
+        })(document,"script","hs-analytics",300000);
+      </script>
+    <!-- End of Async HubSpot Analytics Code -->
+    
     </body>
-</html>
+
+<!-- InstanceEnd --></html>
