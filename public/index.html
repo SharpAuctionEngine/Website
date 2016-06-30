@@ -34,11 +34,11 @@ http://www.templatemo.com/tm-395-urbanic
 
 <!--
         <link href="css/templatemo_style.css" rel='stylesheet' type='text/css'>
--->
 
+-->
         <!--   Productions css  -->
 
-        <link href="css/style052616.css" rel='stylesheet' type='text/css'>
+        <link href="css/style063016.css" rel='stylesheet' type='text/css'>
 <!---->
 
         
@@ -552,8 +552,103 @@ src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
 
         <!-- InstanceEndEditable -->
 
+
+        <!--  Blog feed  -->
+
+    <div class="blog-feed-wrap">
+        <div class="container">
+            <h2 class="blog-feed-section-title">Latest From Our Blog:</h2>
+
+            <div class="row">
+
+                <div class="col-sm-12 col-md-6">
+                    <a id="blog-feed-link-one" class="col-xs-12">
+
+
+                            <div class="vertAlignerImgOne"></div>
+
+                            <div class="vertAlignerOne"></div>
+
+
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+
+                    <a id="blog-feed-link-two" class="col-xs-12">
+
+
+                            <div class="vertAlignerImgTwo"></div>
+
+                            <div class="vertAlignerTwo"></div>
+
+
+                    </a>
+                </div>
+            </div>      
+        </div>
+    </div>
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+
+        <script>
+        $(document).ready(function() {
+
+            //feed to parse
+            var feed = 'http://news.sharpauctionengine.com/blogs/rss.xml';
+            
+            $.ajax(feed, {
+                accepts:{
+                    xml:"application/rss+xml"
+                },
+                dataType:"xml",
+                success:function(data) {
+
+                    var blogItemArray = $(data).find("item");
+
+                    var blogItemOne = $(blogItemArray).get(0);
+                    var blogTitleOne = $(blogItemOne).find("title").text();
+                    var blogLinkOne = $(blogItemOne).find("link").text();
+                    var blogDescOne = $(blogItemOne).find("description").text();
+                    var blogImgOne = $(blogDescOne).find("img.hs-featured-image").get();
+                    var blogImgSrcOne = $(blogImgOne).attr("src");
+
+
+                    $("#blog-feed-link-one").attr("href", blogLinkOne);
+
+                    $(".vertAlignerImgOne").append( $('<img class="blog-img-link-one" />' ));
+
+                    $(".blog-img-link-one").attr("src", blogImgSrcOne);
+
+                    $(".vertAlignerOne").append( $('<h2 />', {text: blogTitleOne}) );
+
+
+
+
+                    var blogItemTwo = $(blogItemArray).get(1);
+                    var blogTitleTwo = $(blogItemTwo).find("title").text();
+                    var blogLinkTwo = $(blogItemTwo).find("link").text();
+                    var blogDescTwo = $(blogItemTwo).find("description").text();
+                    var blogImgTwo = $(blogDescTwo).find("img.hs-featured-image").get();
+                    var blogImgSrcTwo = $(blogImgTwo).attr("src");
+
+
+                    $("#blog-feed-link-two").attr("href", blogLinkTwo);
+
+                    $(".vertAlignerImgTwo").append( $('<img class="blog-img-link-two" />' ));
+
+                    $(".blog-img-link-two").attr("src", blogImgSrcTwo);
+
+                    $(".vertAlignerTwo").append( $('<h2 />', {text: blogTitleTwo}) );
+
+                }
+            });
+        });
+
+        </script>
+
         <!-- Footer -->
-        <!-- NOTE: I feel like this needs help. Also, the Linkedin icon falls off the page a little at certain sizes. -->
+      
         <div class="templatemo-footer">
             <div class="footer_container">
 
@@ -676,7 +771,6 @@ src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
                 </div>
 
         </div>
-        <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
 		 <!-- Ending Main Content -->
         <!-- InstanceBeginEditable name="Script" -->
