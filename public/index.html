@@ -35,12 +35,12 @@ http://www.templatemo.com/tm-395-urbanic
 <!--
         <link href="css/templatemo_style.css" rel='stylesheet' type='text/css'>
 
--->
+--> 
         <!--   Productions css  -->
 
         <link href="css/style070116.css" rel='stylesheet' type='text/css'>
    
-        
+       
         <!-- InstanceEndEditable -->
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -559,7 +559,7 @@ src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
 
     <div class="blog-feed-wrap">
         <div class="container">
-            <h2 class="blog-feed-section-title">Latest From Our Blog:</h2>
+            <h2 class="blog-feed-section-title">Latest From Our Blog and Release Notes:</h2>
 
             <div class="row">
 
@@ -624,10 +624,24 @@ src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
 
                     $(".vertAlignerOne").append( $('<h2 />', {text: blogTitleOne}) );
 
+                }
+            });
+       
 
 
+            //feed to parse
+            var feed = 'http://news.sharpauctionengine.com/release-notes/rss.xml';
+            
+            $.ajax(feed, {
+                accepts:{
+                    xml:"application/rss+xml"
+                },
+                dataType:"xml",
+                success:function(data) {
 
-                    var blogItemTwo = $(blogItemArray).get(1);
+                    var blogItemArray = $(data).find("item");
+
+                    var blogItemTwo = $(blogItemArray).get(0);
                     var blogTitleTwo = $(blogItemTwo).find("title").text();
                     var blogLinkTwo = $(blogItemTwo).find("link").text();
                     var blogDescTwo = $(blogItemTwo).find("description").text();
@@ -637,9 +651,7 @@ src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
 
                     $("#blog-feed-link-two").attr("href", blogLinkTwo);
 
-                    $(".vertAlignerImgTwo").append( $('<img class="blog-img-link-two" />' ));
-
-                    $(".blog-img-link-two").attr("src", blogImgSrcTwo);
+                    $(".vertAlignerImgTwo").append( $('<img class="blog-img-link-two" src="images/200-release.jpg" />' ));
 
                     $(".vertAlignerTwo").append( $('<h2 />', {text: blogTitleTwo}) );
 
