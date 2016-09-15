@@ -593,6 +593,91 @@ src="https://www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
 
 
 
+
+        <!--  Blog feed  -->
+
+    <div class="blog-feed-wrap">
+        <div class="container">
+            <h2 class="blog-feed-section-title">See What's Next:</h2>
+
+            <div class="row">
+
+                <div class="col-sm-12 col-md-8 col-md-offset-2">
+                    <a id="blog-feed-link-one" class="col-xs-12">
+
+
+                            <div class="vertAlignerImgOne"></div>
+
+                            <div class="vertAlignerOne"></div>
+
+
+                    </a>
+                </div>
+<style>
+                .blog-img-link-one, 
+.blog-img-link-two { 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 20px;
+  max-height: 120px;
+  width: 100%;
+}
+</style>
+               
+            </div>      
+        </div>
+    </div>
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+
+        <script>
+        $(document).ready(function() {
+
+            //feed to parse
+            var feed = 'http://news.sharpauctionengine.com/whats-next/rss.xml';
+            
+            $.ajax(feed, {
+                accepts:{
+                    xml:"application/rss+xml"
+                },
+                dataType:"xml",
+                success:function(data) {
+
+                    var blogItemArray = $(data).find("item");
+
+                    var blogItemOne = $(blogItemArray).get(0);
+                    var blogTitleOne = $(blogItemOne).find("title").text();
+                    var blogLinkOne = $(blogItemOne).find("link").text();
+                    var blogDescOne = $(blogItemOne).find("description").text();
+                    var blogImgOne = $(blogDescOne).find("img.hs-featured-image").get();
+                    var blogImgSrcOne = $(blogImgOne).attr("src");
+
+
+                    $("#blog-feed-link-one").attr("href", blogLinkOne);
+
+                    $(".vertAlignerImgOne").append( $('<img class="blog-img-link-one" />' ));
+
+                    $(".blog-img-link-one").attr("src", blogImgSrcOne);
+
+                    $(".vertAlignerOne").append( $('<h2 />', {text: blogTitleOne}) );
+
+                }
+            });
+       
+
+
+          
+        });
+
+        </script>
+
+
+
+
+
+
+
         <!-- Development Timeline -->
         <!-- NOTE: The little blue squares should be circles and there should be a little caret-type shape coming from the event body and pointing to the date indicator, almost like a speech bubble. Here is what it is supposed to look like: http://bootflat.github.io/documentation.html (scroll down a little to see the TimeLine). I also think it might look cleaner if it didn't extend all the way to the edge of the screen and instead had the same edges as the other elements on the page. -->
         <div class="container">
