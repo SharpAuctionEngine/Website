@@ -1023,6 +1023,12 @@ fieldset[disabled] .btn {
 	float: right;
 }
 
+
+
+
+<!--   Partners page  -->
+
+
 .templatemo-partners {
 	border-top: 2px solid #cccccc;
 }
@@ -1030,6 +1036,64 @@ fieldset[disabled] .btn {
 .templatemo-partners .templatemo-partner-item {
     margin-bottom: 5px;
 }
+
+.partnerBlock {min-height: 1px; margin-bottom:20px;}
+
+.partnerBlock h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: -0.01em;
+    color:#555;
+
+}
+
+.partnerBlock h4 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size:20px;
+  letter-spacing: -0.01em;
+  color:#e69d00;
+}
+
+.partnerBlock p {
+  margin-top:10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size:16px;
+  line-height: 21px;
+}
+
+a.partnerLinks {
+  float: left;
+  clear: both;
+  font-size: 14px;
+  width: 100%;
+  font-weight: bold;
+  color:#787878;
+  margin:8px 0 0;
+}
+
+.part-img {width:100%; height:200px; border: solid 1px #7abfd0;}
+
+@media (min-width: 700px) { 
+.part-img { height:300px; }
+}
+
+.auctionlook img {height:100%; margin:0;}
+.shearer img {width:100%; margin:5% 0 0;}
+.blue img {width:90%; margin:14% 5% 0;}
+.nmrules img {width:86%; margin:25% 7% 0;}
+.itrm img {width:96%; margin:18% 2% 0;}
+.guitar img {width:94%; margin:10% 3% 0;}
+.gag img {width:80%; margin:23% 10% 0;}
+.redst img {width:86%; margin:18% 7% 0;}
+.bestonbiz img {width:86%; margin:18% 7% 0;}
+.stripe img {width:70%; margin:0 15% ;}
+.soci img {width:86%; margin:2% 7% 0;}
+.usps img {width:70%; margin:0 15%; }
+
+.learnMore {margin-bottom:20px;}
 
 .templatemo-footer {
 	border-top: 1px solid #555;
@@ -1106,6 +1170,8 @@ a:hover.link_hover
     display: block;
 }
 @media (min-width: 768px){
+  .part-img {height:150px; }
+
 /*.custom_width .col-sm-2 { width: 19.285714285714%; }
 */}
 a:hover .social-icon-fb {
