@@ -320,12 +320,6 @@ fieldset[disabled] .btn {
 
 
 
-
-
-
-
-
-
 @media (min-width: 768px) {
     #templatemo-carousel .carousel-caption p {
 	line-height: 1.4;
@@ -1076,22 +1070,59 @@ a.partnerLinks {
 
 .part-img {width:100%; height:200px; border: solid 1px #7abfd0;}
 
-@media (min-width: 700px) { 
-.part-img { height:300px; }
+.part-img img {max-height:96%; max-width:96%; margin:0;}
+
+.shearer img {margin:5% 0 -5%;}
+.nmrules img {margin:25% 0 -25%;}
+.blue img {margin:15% 0 -15%;}
+.itrm img {margin:19% 0 -19%;}
+.guitar img {margin:0;}
+.gag img {margin:19% 0 -19%;}
+.redst img {margin:16% 0 -16%;}
+.bestonbiz img {margin:0;}
+.ups img {margin-top:8px; height:90%;}
+/*
+
+.guitar img {margin:10% 3% 0;}
+
+.stripe img {margin:0 15% ;}
+.soci img {margin:2% 7% 0;}
+.usps img {margin:0 15%; }
+*/
+@media (min-width: 990px) { 
+
+.shearer img {margin:2% 0 -2%;}
+.nmrules img {margin:17% 0 -17%;}
+.blue img {margin:5% 0 -5%;}
+.itrm img {margin:10% 0 -10%;}
+.guitar img {margin:1% 0 -1%;}
+.gag img {margin:14% 0 -14%;}
+.redst img {margin:11% 0 -11%;}
 }
 
-.auctionlook img {height:100%; margin:0;}
-.shearer img {width:100%; margin:5% 0 0;}
-.blue img {width:90%; margin:14% 5% 0;}
-.nmrules img {width:86%; margin:25% 7% 0;}
-.itrm img {width:96%; margin:18% 2% 0;}
-.guitar img {width:94%; margin:10% 3% 0;}
-.gag img {width:80%; margin:23% 10% 0;}
-.redst img {width:86%; margin:18% 7% 0;}
-.bestonbiz img {width:86%; margin:18% 7% 0;}
-.stripe img {width:70%; margin:0 15% ;}
-.soci img {width:86%; margin:2% 7% 0;}
-.usps img {width:70%; margin:0 15%; }
+@media (max-width: 768px) {
+
+.shearer img {margin:2% 0 -2%;}
+.nmrules img {margin:13% 0 -13%;}
+.blue img {margin:1% 0 -1%;}
+.itrm img {margin:5% 0 -5%;}
+.guitar img {margin:1% 0 -1%;}
+.gag img {margin:10% 0 -10%;}
+.redst img {margin:9% 0 -9%;}
+}
+
+@media (max-width: 540px) {
+
+.shearer img {margin:2% 0 -2%;}
+.nmrules img {margin:19% 0 -19%;}
+.blue img {margin:1% 0 -1%;}
+.itrm img {margin:10% 0 -10%;}
+.guitar img {margin:1% 0 -1%;}
+.gag img {margin:17% 0 -17%;}
+.redst img {margin:14% 0 -14%;}
+}
+
+
 
 .learnMore {margin-bottom:20px;}
 
@@ -2003,6 +2034,20 @@ dd{margin-left:0}
     .foot-contact a {font-size: 14px;}
 
 }
+
+
+
+@media (min-width: 768px) and (max-width: 990px) {
+
+
+    .nav li a {
+        padding: 7px 7px;
+        margin: 12px 1px 0;
+        font-weight: bold;
+        font-size: 10px;
+    }
+}
+
 
 
 
