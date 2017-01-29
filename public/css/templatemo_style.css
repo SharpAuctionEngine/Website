@@ -2066,6 +2066,51 @@ dd{margin-left:0}
 
 
 
+/*      Custom drop down menu styles       */
+
+
+.dropdown-menu{
+
+  background-color: #ddd;
+    top:61px;
+    font-weight: bold;
+    font-size: 12px;
+    font-family:  'Open Sans', sans-serif;
+    font-weight: normal;
+    min-width: 120px;
+}
+.dropdown-menu li a{padding-top:5px; padding-bottom:5px;}
+
+.dropdown-menu li a:hover {background: #eee;}
+
+
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {background-color: #787878;}
+
+
+
+
+
+@media (max-width: 990px) and (min-width: 768px) {
+
+
+.dropdown-menu{
+
+    background-color: #ddd;
+    top:57px;
+    min-width: 100px;
+  }
+
+.dropdown-menu li {width:100px; padding-top:0; padding-bottom:0;}
+.dropdown-menu li a {width:100px; margin: 0; font-weight: normal;}
+
+
+}
+
+
+
+
+
 /*  Brint End  */
 
 

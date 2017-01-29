@@ -36,9 +36,9 @@ http://www.templatemo.com/tm-395-urbanic
         <link href="css/templatemo_style.css" rel='stylesheet' type='text/css'>
 
 -->
-        <!--   Productions css  -->
+        <!--   Production css  -->
 
-        <link href="css/style113016.css" rel='stylesheet' type='text/css'>
+        <link href="css/style012917.css" rel='stylesheet' type='text/css'>
 
 
         <!-- InstanceEndEditable -->
@@ -116,23 +116,31 @@ src="//www.facebook.com/tr?id=1518592401781359&ev=PageView&noscript=1"
                         </div>
                         <div class="navbar-collapse collapse navbarCollapse" id="templatemo-nav-bar">
                             <ul class="nav navbar-nav navbar-right">
+
                                 <li><a href="index.html">HOME</a></li>
-                                <!-- Link to Home Page -->
-                                <li><a href="about.html">ABOUT</a></li>
-                                <!-- Link to About Page -->
-                                <li><a href="/features.html">FEATURES</a></li>
-                                <!-- Link to Features Page -->
+
+                                <li><a href="features.html">PRODUCT</a></li>
+
                                 <li><a href="demo.html">DEMO</a>
-                                    <!-- Link to Demo Website-->
-                                    <!-- <li ><a href="/auctioneer-signup" target="_blank">PRICING</a></li>-->
-                                    <!-- Link to Support Page -->
-                                    <li><a href="support.html">SUPPORT</a></li>
-                                    <!-- Link to Blog Page -->
-                                    <li><a href="http://news.sharpauctionengine.com/">BLOG</a></li>
-                                    <!-- Link to Partners Page -->
-                                    <li><a href="industry-partners.html">PARTNERS</a></li>
-                                    <!-- Link to Support Page -->
-                                    <li><a href="contact-us.html">CONTACT</a></li>
+                                
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown">COMPANY <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="about.html">ABOUT</a></li>
+                                        <li><a href="http://news.sharpauctionengine.com/">BLOG</a></li>
+                                        <li><a href="industry-partners.html">PARTNERS</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown">SUPPORT <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="support.html">SUPPORT</a></li>
+                                        <li><a href="http://support.sharpauctionengine.com/?__hstc=181257784.b4525f1f211f7eec6b6ceddd474b74d9.1483805580497.1485049837697.1485712206132.9&__hssc=181257784.33.1485712206132&__hsfp=4093084694">RESOURCES</a></li>
+                                        <li><a href="contact-us.html">CONTACT</a></li>
+                                    </ul>
+                                </li>
+
                                     <li><a class="btn btn-md btn-green" href="http://extras.sharpauctionengine.com/sae-pricing" target="_blank" role="button" style="margin: 10px;"><strong>Get Started!</strong></a></li>
                                     <!-- Link to Pricing Page -->
                             </ul>
@@ -861,6 +869,17 @@ $(function () {
 });
         </script>
 
+<script>
+$( document ).ready(function() {
+
+
+        $('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(100);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(100);
+});
+    });
+</script>
     <!-- Start of Async HubSpot Analytics Code -->
       <script type="text/javascript">
         (function(d,s,i,r) {
