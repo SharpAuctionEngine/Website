@@ -2078,6 +2078,7 @@ dd{margin-left:0}
     font-family:  'Open Sans', sans-serif;
     font-weight: normal;
     min-width: 120px;
+    position: static;
 }
 .dropdown-menu li a{padding-top:5px; padding-bottom:5px;}
 
